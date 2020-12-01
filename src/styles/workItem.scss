@@ -5,17 +5,16 @@
   cursor: pointer;
 
   .image-container {
-    background-color: #e5e2e7;
-    margin-bottom: 18px;
+    margin-bottom: 32px;
 
     .gatsby-image-wrapper {
       box-shadow: 1px 5px 15px 2px rgba(0, 0, 0, 0.2);
-      transition: all 200ms;
+      transition: transform 400ms;
     }
 
     @media (min-width: 1375px) {
       .gatsby-image-wrapper {
-        height: 280px;
+        height: 308px;
       }
     }
   }
@@ -46,7 +45,7 @@
 
   &:hover {
     .image-container .gatsby-image-wrapper {
-      transform: scale(1.02);
+      transform: scale(1.01);
     }
   }
 }

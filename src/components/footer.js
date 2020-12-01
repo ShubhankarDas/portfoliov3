@@ -16,9 +16,9 @@ const Footer = () => (
         </span>
       </h3>
       <div className="social-links-container">
-        <HoverLink link="/" text="LinkedIn" />
-        <HoverLink link="/" text="Codepen" />
-        <HoverLink link="/" text="Github" />
+        <HoverLink link="/" text="LinkedIn" reverse={true} />
+        <HoverLink link="/" text="Codepen" reverse={true} />
+        <HoverLink link="/" text="Github" reverse={true} />
       </div>
     </div>
   </footer>

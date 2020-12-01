@@ -5,8 +5,7 @@ import Img from "gatsby-image"
 
 const WorkItem = ({ title, description, image, bannerColor }) => (
   <div className="work-item">
-    <div className="image-container" style={{ backgroundColor: bannerColor }}>
-      {/* <img className="work-img" src={reslashImage} alt="reslash"></img> */}
+    <div className="image-container">
       <Img fluid={image} />
     </div>
     <div className="info-container">

@@ -2,13 +2,14 @@
   .wrapper {
     width: 100%;
     margin: 160px 0;
+    margin-bottom: 100px;
 
     .header {
       max-width: 160px;
 
       h2 {
         font-size: 30px;
-        font-weight: 600;
+        font-weight: 700;
 
         @media (min-width: 760px) {
           font-size: 36px;
@@ -17,7 +18,7 @@
     }
 
     .filter-container {
-      margin: 100px 10% 50px;
+      margin: 110px 10% 60px;
       flex-direction: row;
       display: none;
       justify-content: space-around;
@@ -39,7 +40,7 @@
         align-items: center;
 
         .image-container {
-          padding: 39px 28px;
+          // padding: 39px 28px;
         }
       }
 

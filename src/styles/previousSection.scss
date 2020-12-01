@@ -2,13 +2,13 @@
 .previous-section {
   .wrapper {
     width: 100%;
-    margin: 160px 0;
+    margin: 170px 0;
 
     .header {
       max-width: 160px;
 
       h2 {
-        font-weight: 600;
+        font-weight: 700;
         font-size: 30px;
 
         @media (min-width: 760px) {
@@ -18,7 +18,7 @@
     }
 
     .version-container {
-      margin: 58px 0;
+      margin: 68px 0;
 
       .version-item {
         .hover-link {
