@@ -1,0 +1,49 @@
+@import "./colors.scss";
+.previous-section {
+  .wrapper {
+    width: 100%;
+    margin: 160px 0;
+
+    .header {
+      max-width: 160px;
+
+      h2 {
+        font-weight: 600;
+        font-size: 30px;
+
+        @media (min-width: 760px) {
+          font-size: 36px;
+        }
+      }
+    }
+
+    .version-container {
+      margin: 58px 0;
+
+      .version-item {
+        .hover-link {
+          font-weight: 700;
+          font-size: 20px;
+        }
+
+        p {
+          font-family: "IBM Plex Mono", "IBM Plex Sans", monospace, sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          color: $sub-header-color;
+          padding: 8px 0;
+        }
+
+        @media (min-width: 760px) {
+          .hover-link {
+            font-size: 26px;
+          }
+
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

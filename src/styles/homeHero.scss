@@ -1,0 +1,33 @@
+#home-hero {
+  width: 100%;
+
+  .wrapper {
+    width: 100%;
+    max-width: 670px;
+    margin: 180px 0;
+
+    h1 {
+      font-size: 46px;
+      font-weight: 600;
+      line-height: 1.3em;
+    }
+
+    h4 {
+      font-family: "IBM Plex Mono", "IBM Plex Sans", monospace, sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.6em;
+    }
+
+    @media (min-width: 760px) {
+      margin: 210px 0;
+      h1 {
+        font-size: 52px;
+      }
+
+      h4 {
+        font-size: 22px;
+      }
+    }
+  }
+}

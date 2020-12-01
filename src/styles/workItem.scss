@@ -1,0 +1,52 @@
+@import "./colors.scss";
+
+.work-item {
+  margin: 40px 0;
+  cursor: pointer;
+
+  .image-container {
+    background-color: #e5e2e7;
+    margin-bottom: 18px;
+
+    .gatsby-image-wrapper {
+      box-shadow: 1px 5px 15px 2px rgba(0, 0, 0, 0.2);
+      transition: all 200ms;
+    }
+
+    @media (min-width: 1375px) {
+      .gatsby-image-wrapper {
+        height: 280px;
+      }
+    }
+  }
+  .info-container {
+    .info-header {
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+    .info-description {
+      font-weight: 500;
+      font-size: 16px;
+      color: $sub-header-color;
+      font-family: "IBM Plex Mono", "IBM Plex Sans", monospace, sans-serif;
+      line-height: 1.4;
+    }
+
+    @media (min-width: 760px) {
+      .info-header {
+        font-size: 32px;
+      }
+
+      .info-description {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &:hover {
+    .image-container .gatsby-image-wrapper {
+      transform: scale(1.02);
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "./colors.scss";
+
+.hover-link {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::after,
+  &::before {
+    width: 100%;
+    height: 2px;
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 400ms;
+  }
+
+  &::before {
+    bottom: 0;
+    background-color: $header-color;
+  }
+
+  &.reverse {
+    &::after {
+      bottom: 0;
+      background-color: $background;
+    }
+
+    &:hover {
+      &::after {
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  &:not(.reverse) {
+    &::after {
+      bottom: 3px;
+      background-color: $background;
+    }
+
+    &:hover {
+      &::after {
+        transform: translateY(3px);
+      }
+    }
+  }
+}

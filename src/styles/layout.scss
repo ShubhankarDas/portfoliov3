@@ -1,0 +1,12 @@
+@import "./colors.scss";
+
+.main-wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  a {
+    text-decoration: none;
+    color: $header-color;
+  }
+}
