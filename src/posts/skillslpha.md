@@ -6,4 +6,5 @@ sequence: 6
 bannerImage: ../images/skillsalpha/cover-desktop.png
 bannerColor: ""
 categories: "all web"
+slug: "convertfly"
 ---

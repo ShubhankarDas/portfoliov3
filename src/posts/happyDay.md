@@ -6,4 +6,5 @@ sequence: 3
 bannerImage: ../images/happy-day/home.png
 bannerColor: "#E7E2E2"
 categories: "all web extension"
+slug: "convertfly"
 ---

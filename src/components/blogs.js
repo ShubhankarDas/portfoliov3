@@ -23,7 +23,11 @@ const Blogs = () => {
         <div className="blogs-container">
           {blogs.map(blog => (
             <div className="blog-item" key={blog.title}>
-              <HoverLink link={blog.link} text={blog.title} reverse={false} />
+              <HoverLink
+                externalLink={blog.link}
+                text={blog.title}
+                reverse={false}
+              />
               <p>{blog.description}</p>
             </div>
           ))}

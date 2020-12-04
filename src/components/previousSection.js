@@ -29,7 +29,7 @@ const PreviousSection = () => {
           {versions.map(version => (
             <div className="version-item" key={version.title}>
               <HoverLink
-                link={version.link}
+                externalLink={version.link}
                 text={version.title}
                 reverse={false}
               />

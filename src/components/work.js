@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, navigate } from "gatsby"
 
 import "../styles/work.scss"
 
@@ -17,6 +17,7 @@ const Work = () => {
             frontmatter {
               title
               description
+              slug
               bannerColor
               categories
               bannerImage {
@@ -53,12 +54,19 @@ const Work = () => {
         bannerColor: edge.node.frontmatter.bannerColor,
         categories: edge.node.frontmatter.categories,
         bannerImage: edge.node.frontmatter.bannerImage.childImageSharp.fluid,
+        slug: edge.node.frontmatter.slug,
       })
       return result
     }, [])
 
+    console.log(items)
+
     setFilteredItems(items)
   }, [filter])
+
+  const routeTo = slug => {
+    navigate(`/blogs/${slug}`)
+  }
 
   return (
     <div id="work">
@@ -110,6 +118,7 @@ const Work = () => {
               image={item.bannerImage}
               bannerColor={item.bannerColor}
               key={item.title}
+              onClickCallback={() => routeTo(item.slug)}
             />
           ))}
         </div>

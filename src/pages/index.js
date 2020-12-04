@@ -1,6 +1,4 @@
 import React from "react"
-import { Helmet } from "react-helmet"
-import { graphql, useStaticQuery } from "gatsby"
 
 // styles
 import "../styles/styles.scss"
@@ -11,28 +9,16 @@ import HomeHero from "../components/homeHero"
 import Work from "../components/work"
 import Blogs from "../components/blogs"
 import PreviousSection from "../components/previousSection"
+import Seo from "../components/seo"
 
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <Layout>
       <HomeHero />
       <Work />
       <Blogs />
       <PreviousSection />
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>{data.site.siteMetadata.title}</title>
-      </Helmet>
+      <Seo />
     </Layout>
   )
 }

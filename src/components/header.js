@@ -7,12 +7,14 @@ import HoverLink from "./hoverLink"
 
 const Header = () => (
   <header>
-    <span className="logo">
-      <Link to="/">Shubhankar.</Link>
-    </span>
+    <div class="main-header">
+      <span className="logo">
+        <Link to="/">Shubhankar.</Link>
+      </span>
 
-    <HoverLink link="#work" text="work" />
-    <HoverLink link="/" text="about" />
+      <HoverLink link="#work" text="work" />
+      <HoverLink link="/" text="about" />
+    </div>
   </header>
 )
 

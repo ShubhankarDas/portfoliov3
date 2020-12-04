@@ -5,4 +5,5 @@ description: "Coming soon."
 sequence: 1
 bannerImage: ../images/reslash/main.png
 categories: "all web"
+slug: "convertfly"
 ---

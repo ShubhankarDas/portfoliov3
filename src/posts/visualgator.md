@@ -6,4 +6,5 @@ sequence: 4
 bannerImage: ../images/visualgator/Desktop.png
 bannerColor: "#E2E2E7"
 categories: "all web mobile"
+slug: "convertfly"
 ---

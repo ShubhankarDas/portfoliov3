@@ -5,5 +5,6 @@ description: "Facebook messenger marketing app built for Shopify customers to in
 sequence: 2
 bannerImage: ../images/convertfly/convertfly-home.png
 bannerColor: "#E2E6E7"
+slug: "convertfly"
 categories: "all web"
 ---

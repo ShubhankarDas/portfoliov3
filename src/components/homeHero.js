@@ -17,7 +17,11 @@ const HomeHero = () => (
       <h4>
         I love connecting ideas with reality and leaving customers with a nice
         experience. Currently I am working with{" "}
-        <HoverLink link="/" text="Browserstack" />.
+        <HoverLink
+          externalLink="https://browserstack.com"
+          text="Browserstack"
+        />
+        .
       </h4>
     </div>
   </div>
