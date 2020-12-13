@@ -8,14 +8,12 @@ const PreviousSection = () => {
     {
       title: "Version 3 - current version",
       description: "2020 - present",
-      link:
-        "https://medium.com/@shubh065/how-to-make-your-website-load-faster-18ed79a6cc59",
+      link: "https://shubhankardas.me",
     },
     {
       title: "Version 2",
       description: "2018 - 2020",
-      link:
-        "https://medium.com/@shubh065/how-to-make-your-website-load-faster-18ed79a6cc59",
+      link: "https://shubhankarDas.github.io",
     },
   ]
 
