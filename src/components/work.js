@@ -61,8 +61,6 @@ const Work = () => {
       return result
     }, [])
 
-    console.log(items)
-
     setFilteredItems(items)
   }, [filter])
 
