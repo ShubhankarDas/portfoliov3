@@ -15,7 +15,7 @@ const BlogLayout = ({ children, nextBlog, prevBlog, pageTitle }) => (
       <HoverLink link="/" text="Home" />
     </header>
     <main>{children}</main>
-    <BlogNav prev={prevBlog} next={nextBlog} />
+    <BlogNav prev={prevBlog || undefined} next={nextBlog || undefined} />
     <Footer />
   </div>
 )

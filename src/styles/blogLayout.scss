@@ -1,2 +1,104 @@
+@import "./colors.scss";
+
 .blog-wrapper {
+  .hero-section {
+    display: flex;
+    padding: 100px 0;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    .left-section {
+      padding-right: 22px;
+      .title {
+        margin: 0;
+        margin-bottom: 8px;
+        font-size: 34px;
+      }
+
+      .sub-title {
+        margin: 0;
+        font-weight: 600;
+      }
+    }
+
+    .right-section {
+      max-width: 700px;
+    }
+
+    @media (min-width: 1000px) {
+      display: flex;
+      padding: 100px 0;
+      align-items: center;
+      text-align: left;
+      justify-content: space-between;
+      flex-direction: row;
+
+      .right-section {
+        max-width: 700px;
+        flex: 1;
+      }
+    }
+  }
+
+  main {
+    padding-bottom: 52px;
+  }
+
+  .content {
+    max-width: 700px;
+    margin: 52px auto;
+    padding: 4px 0;
+
+    h3,
+    h2 {
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-family: "IBM Plex Mono", "IBM Plex Sans", monospace, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: $sub-header-color;
+      margin: 0;
+    }
+  }
+
+  .image-wrapper {
+    padding: 12px;
+    margin: auto;
+    border-radius: 3px;
+
+    &.mini {
+      max-width: 200px;
+    }
+
+    &.shadow {
+      box-shadow: 1px 5px 15px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    &.multiple {
+      display: flex;
+      max-width: 700px;
+      justify-content: space-around;
+      align-items: center;
+
+      .gatsby-image-wrapper {
+        max-width: 210px;
+        width: 100%;
+        margin: 12px;
+      }
+    }
+
+    &.img-shadow {
+      .gatsby-image-wrapper {
+        box-shadow: 1px 5px 15px 2px rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+      }
+    }
+  }
+  .shadow {
+    box-shadow: 1px 5px 15px 2px rgba(0, 0, 0, 0.2);
+  }
 }

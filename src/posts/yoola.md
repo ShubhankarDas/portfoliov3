@@ -6,5 +6,7 @@ sequence: 5
 bannerImage: ../images/yoola/cover.png
 bannerColor: "#E7E6E2"
 categories: "all mobile"
-slug: "convertfly"
+slug: "yoola"
+next: "/blogs/visualgator"
+previous: "/blogs/skillsalpha"
 ---

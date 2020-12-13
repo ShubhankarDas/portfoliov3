@@ -13,7 +13,7 @@ const Header = () => (
       </span>
 
       <HoverLink link="#work" text="work" />
-      <HoverLink link="/" text="about" />
+      <HoverLink link="#home-hero" text="about" />
     </div>
   </header>
 )

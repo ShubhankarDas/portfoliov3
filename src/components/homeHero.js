@@ -15,8 +15,8 @@ const HomeHero = () => (
         India.
       </h1>
       <h4>
-        I love connecting ideas with reality and leaving customers with a nice
-        experience. Currently I am working with{" "}
+        I strive to bridge the gap between people and technology leaving them a
+        good experience. Currently working at{" "}
         <HoverLink
           externalLink="https://browserstack.com"
           text="Browserstack"

@@ -6,5 +6,7 @@ sequence: 6
 bannerImage: ../images/skillsalpha/cover-desktop.png
 bannerColor: ""
 categories: "all web"
-slug: "convertfly"
+slug: "skillsalpha"
+next: "https://codepen.io/shubhankar-das/full/jQKXya"
+previous: "/blogs/yoola"
 ---

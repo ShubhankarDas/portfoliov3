@@ -18,6 +18,7 @@ const Work = () => {
               title
               description
               slug
+              projectLink
               bannerColor
               categories
               bannerImage {
@@ -55,6 +56,7 @@ const Work = () => {
         categories: edge.node.frontmatter.categories,
         bannerImage: edge.node.frontmatter.bannerImage.childImageSharp.fluid,
         slug: edge.node.frontmatter.slug,
+        projectLink: edge.node.frontmatter.projectLink,
       })
       return result
     }, [])
@@ -64,8 +66,12 @@ const Work = () => {
     setFilteredItems(items)
   }, [filter])
 
-  const routeTo = slug => {
-    navigate(`/blogs/${slug}`)
+  const routeTo = (slug, projectLink) => {
+    if (projectLink) {
+      window.location = projectLink
+    } else {
+      navigate(`/blogs/${slug}`)
+    }
   }
 
   return (
@@ -118,7 +124,7 @@ const Work = () => {
               image={item.bannerImage}
               bannerColor={item.bannerColor}
               key={item.title}
-              onClickCallback={() => routeTo(item.slug)}
+              onClickCallback={() => routeTo(item.slug, item.projectLink)}
             />
           ))}
         </div>

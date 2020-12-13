@@ -6,5 +6,6 @@ sequence: 3
 bannerImage: ../images/happy-day/home.png
 bannerColor: "#E7E2E2"
 categories: "all web extension"
-slug: "convertfly"
+slug: "happyDay"
+projectLink: "https://chrome.google.com/webstore/detail/have-a-happy-day/hoejcgkhholkbmljbndmnndnoojckald"
 ---

@@ -1,4 +1,7 @@
 .blog-nav {
   display: flex;
   justify-content: space-between;
+  a {
+    text-transform: capitalize;
+  }
 }

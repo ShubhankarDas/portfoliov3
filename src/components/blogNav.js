@@ -5,8 +5,9 @@ import HoverLink from "./hoverLink"
 
 const BlogNav = ({ prev, next }) => (
   <div className="blog-nav">
-    <HoverLink link={prev.link} text={prev.title} reverse={false} />
-    <HoverLink link={next.link} text={next.title} reverse={false} />
+    {prev ? <HoverLink {...prev} text={prev.title} reverse={false} /> : ""}
+
+    {next ? <HoverLink {...next} text={next.title} reverse={false} /> : ""}
   </div>
 )
 
