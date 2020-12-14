@@ -7,7 +7,7 @@ import HoverLink from "./hoverLink"
 
 const Header = () => (
   <header>
-    <div class="main-header">
+    <div className="main-header">
       <span className="logo">
         <Link to="/">Shubhankar.</Link>
       </span>
