@@ -16,7 +16,7 @@ header {
       margin-left: 0;
       font-weight: 500;
       display: none;
-      &:last-child {
+      &:not(:first-child) {
         margin-left: 62px;
       }
     }

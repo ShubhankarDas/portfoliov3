@@ -12,8 +12,24 @@ const Header = () => (
         <Link to="/">Shubhankar.</Link>
       </span>
 
-      <HoverLink link="#work" text="work" />
-      <HoverLink link="#home-hero" text="about" />
+      {/* <HoverLink link="#work" text="work" />
+      <HoverLink link="#home-hero" text="about" /> */}
+
+      <HoverLink
+        externalLink="https://www.linkedin.com/in/shubhankardas/"
+        text="LinkedIn"
+        reverse={true}
+      />
+      <HoverLink
+        externalLink="https://codepen.io/shubhankar-das"
+        text="Codepen"
+        reverse={true}
+      />
+      <HoverLink
+        externalLink="https://github.com/ShubhankarDas"
+        text="Github"
+        reverse={true}
+      />
     </div>
   </header>
 )

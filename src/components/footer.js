@@ -16,9 +16,21 @@ const Footer = () => (
         </span>
       </h3>
       <div className="social-links-container">
-        <HoverLink link="/" text="LinkedIn" reverse={true} />
-        <HoverLink link="/" text="Codepen" reverse={true} />
-        <HoverLink link="/" text="Github" reverse={true} />
+        <HoverLink
+          externalLink="https://www.linkedin.com/in/shubhankardas/"
+          text="LinkedIn"
+          reverse={true}
+        />
+        <HoverLink
+          externalLink="https://codepen.io/shubhankar-das"
+          text="Codepen"
+          reverse={true}
+        />
+        <HoverLink
+          externalLink="https://github.com/ShubhankarDas"
+          text="Github"
+          reverse={true}
+        />
       </div>
     </div>
   </footer>
