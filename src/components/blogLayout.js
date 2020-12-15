@@ -1,6 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types"
-import * as FullStory from "@fullstory/browser"
 
 import "../styles/blogLayout.scss"
 
@@ -8,8 +7,6 @@ import Footer from "./footer"
 import BlogNav from "./blogNav"
 import Seo from "./seo"
 import HoverLink from "./hoverLink"
-
-FullStory.init({ orgId: "GNH5B" })
 
 const BlogLayout = ({ children, nextBlog, prevBlog, pageTitle }) => (
   <div className="main-wrapper blog-wrapper">

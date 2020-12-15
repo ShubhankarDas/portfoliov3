@@ -41,5 +41,11 @@ module.exports = {
         showSpinner: false,
       },
     },
+    {
+      resolve: `gatsby-plugin-fullstory`,
+      options: {
+        fs_org: "GNH5B",
+      },
+    },
   ],
 }
