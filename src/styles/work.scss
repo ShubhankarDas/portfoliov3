@@ -44,9 +44,10 @@
         }
       }
 
-      @media only screen and (min-width: 1375px) {
+      @media only screen and (min-width: 760px) {
         .work-item {
           max-width: 550px;
+          width: 48%;
         }
       }
     }
