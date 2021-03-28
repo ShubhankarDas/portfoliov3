@@ -5,7 +5,6 @@ import "../../styles/styles.scss"
 
 import Img from "gatsby-image"
 import BlogLayout from "../../components/blogLayout"
-import HoverLink from "../../components/hoverLink"
 
 const Reslash = () => {
   const data = useStaticQuery(graphql`
@@ -91,10 +90,9 @@ const Reslash = () => {
           There we already such messaging application like Slack for
           professional purpose. Hence we pivoted from traditional messaging and
           calling application to a modern interactive video conference platform.{" "}
-          <HoverLink
-            externalLink="https://reslash.co?source=shubahankar-portofolio"
-            text="Click here to checkout the latest version of Reslash."
-          />
+          <a href="https://reslash.co?source=shubahankar-portofolio">
+            Click here to checkout the latest version of Reslash.
+          </a>
         </p>
       </div>
       <div className="image-wrapper mini shadow">
