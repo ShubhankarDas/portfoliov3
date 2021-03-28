@@ -74,11 +74,24 @@ const Reslash = () => {
         <Img fluid={getImage("white-theme-room")} />
       </div>
       <div className="content">
+        <h3>Process & Architecture</h3>
+        <p>
+          After gathering requirements for the application, I created an
+          overview design of the frontend system(as shown below). It elaborates
+          the data flow of different use-cases and the implementation of the
+          frontend application. It also shows the communication between
+          different components and storage.
+        </p>
+      </div>
+      <div className="image-wrapper shadow">
+        <Img fluid={getImage("architecture")} />
+      </div>
+      <div className="content">
         <h3>Code</h3>
         <p>
           For the purpose of rapid prototyping, code shareability, and testing,
-          I used Vuejs as our frontend stack, build on Firebase serverless
-          architecture and Agora as our calling system.
+          I used React & Vuejs as our frontend stack, build on Firebase
+          serverless architecture and Agora as our calling system.
         </p>
       </div>
       <div className="image-wrapper shadow">
