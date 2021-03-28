@@ -10,7 +10,12 @@ const WorkItem = ({
   bannerColor,
   onClickCallback,
 }) => (
-  <div className="work-item" onClick={onClickCallback}>
+  <div
+    className="work-item"
+    onClick={onClickCallback}
+    onKeyDown={onClickCallback}
+    role="button"
+  >
     <div className="image-container">
       <Img fluid={image} />
     </div>

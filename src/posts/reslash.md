@@ -1,7 +1,7 @@
 ---
 title: "Reslash"
 year: "2020"
-description: "Coming soon."
+description: "Messaging and calling application."
 sequence: 1
 bannerImage: ../images/reslash/main.png
 categories: "all web"
