@@ -3,26 +3,18 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import "../../styles/styles.scss"
 
-import Img from "gatsby-image"
 import BlogLayout from "../../components/blogLayout"
+
+// images
+import heroBanner from "../../images/convertfly/convertfly-home-ori.png"
+import convertflyTools from "../../images/convertfly/convertfly-tools.png"
+import tools2 from "../../images/convertfly/tools-2.png"
+import campaign1 from "../../images/convertfly/campaign-1.png"
+import campaign2 from "../../images/convertfly/campaign-2.png"
 
 const Convertfly = () => {
   const data = useStaticQuery(graphql`
     query {
-      images: allFile(
-        filter: { relativePath: { regex: "/convertfly/.+\\\\.png/" } }
-      ) {
-        edges {
-          node {
-            name
-            childImageSharp {
-              fluid(maxWidth: 1200) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
       content: markdownRemark(fileAbsolutePath: { regex: "/convertfly.md/" }) {
         frontmatter {
           previous
@@ -31,14 +23,6 @@ const Convertfly = () => {
       }
     }
   `)
-
-  const getImage = name => {
-    let edge = data.images.edges.filter(edge => {
-      return edge.node.name === name
-    })
-
-    return edge[0].node.childImageSharp.fluid
-  }
 
   const getLink = type => {
     let link = data.content.frontmatter[type]
@@ -63,7 +47,7 @@ const Convertfly = () => {
           <h3 className="sub-title">Facebook messenger marketing</h3>
         </div>
         <div className="right-section">
-          <Img fluid={getImage("convertfly-home-ori")} />
+          <img src={heroBanner} />
         </div>
       </div>
       <div className="content">
@@ -75,7 +59,7 @@ const Convertfly = () => {
         </p>
       </div>
       <div className="image-wrapper">
-        <Img fluid={getImage("convertfly-tools")} />
+        <img src={convertflyTools} />
       </div>
       <div className="content">
         <h2>Code</h2>
@@ -103,7 +87,7 @@ const Convertfly = () => {
         </p>
       </div>
       <div className="image-wrapper">
-        <Img fluid={getImage("tools-2")} />
+        <img src={tools2} />
       </div>
 
       <div className="content">
@@ -119,7 +103,7 @@ const Convertfly = () => {
         </p>
       </div>
       <div className="image-wrapper">
-        <Img fluid={getImage("campaign-1")} />
+        <img src={campaign1} />
       </div>
       <div className="content">
         <h3>Result</h3>
@@ -131,7 +115,7 @@ const Convertfly = () => {
         </p>
       </div>
       <div className="image-wrapper">
-        <Img fluid={getImage("campaign-2")} />
+        <img src={campaign2} />
       </div>
     </BlogLayout>
   )

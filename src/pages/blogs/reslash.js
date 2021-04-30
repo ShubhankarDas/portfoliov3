@@ -3,26 +3,18 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import "../../styles/styles.scss"
 
-import Img from "gatsby-image"
 import BlogLayout from "../../components/blogLayout"
+
+// images
+import heroBanner from "../../images/reslash/main.png"
+import whiteThemeRoom from "../../images/reslash/white-theme-room.png"
+import architecture from "../../images/reslash/architecture.png"
+import whiteCall from "../../images/reslash/white-call.png"
+import mobile from "../../images/reslash/mobile.png"
 
 const Reslash = () => {
   const data = useStaticQuery(graphql`
     query {
-      images: allFile(
-        filter: { relativePath: { regex: "/reslash/.+\\\\.png/" } }
-      ) {
-        edges {
-          node {
-            name
-            childImageSharp {
-              fluid(maxWidth: 1200) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
       content: markdownRemark(fileAbsolutePath: { regex: "/reslash.md/" }) {
         frontmatter {
           previous
@@ -31,14 +23,6 @@ const Reslash = () => {
       }
     }
   `)
-
-  const getImage = name => {
-    let edge = data.images.edges.filter(edge => {
-      return edge.node.name === name
-    })
-
-    return edge[0].node.childImageSharp.fluid
-  }
 
   const getLink = type => {
     if (data.content.frontmatter[type]) {
@@ -59,7 +43,7 @@ const Reslash = () => {
           <h3 className="sub-title">Messaging and calling application</h3>
         </div>
         <div className="right-section shadow">
-          <Img fluid={getImage("main")} />
+          <img src={heroBanner} />
         </div>
       </div>
       <div className="content">
@@ -71,7 +55,7 @@ const Reslash = () => {
         </p>
       </div>
       <div className="image-wrapper shadow">
-        <Img fluid={getImage("white-theme-room")} />
+        <img src={whiteThemeRoom} />
       </div>
       <div className="content">
         <h3>Process & Architecture</h3>
@@ -84,7 +68,7 @@ const Reslash = () => {
         </p>
       </div>
       <div className="image-wrapper shadow">
-        <Img fluid={getImage("architecture")} />
+        <img src={architecture} />
       </div>
       <div className="content">
         <h3>Code</h3>
@@ -95,7 +79,7 @@ const Reslash = () => {
         </p>
       </div>
       <div className="image-wrapper shadow">
-        <Img fluid={getImage("white-call")} />
+        <img src={whiteCall} />
       </div>
       <div className="content">
         <h3>Conclusion</h3>
@@ -109,7 +93,7 @@ const Reslash = () => {
         </p>
       </div>
       <div className="image-wrapper mini shadow">
-        <Img fluid={getImage("mobile")} />
+        <img src={mobile} />
       </div>
     </BlogLayout>
   )

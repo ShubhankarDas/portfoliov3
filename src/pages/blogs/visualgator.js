@@ -3,26 +3,17 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import "../../styles/styles.scss"
 
-import Img from "gatsby-image"
 import BlogLayout from "../../components/blogLayout"
+
+// images
+import editor from "../../images/visualgator/Editor.png"
+import desktop from "../../images/visualgator/Desktop.png"
+import mobile from "../../images/visualgator/Mobile.png"
+import visualgatorModeration from "../../images/visualgator/visualgator-moderation.png"
 
 const Visualgator = () => {
   const data = useStaticQuery(graphql`
     query {
-      images: allFile(
-        filter: { relativePath: { regex: "/visualgator/.+\\\\.png/" } }
-      ) {
-        edges {
-          node {
-            name
-            childImageSharp {
-              fluid(maxWidth: 1200) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
       content: markdownRemark(fileAbsolutePath: { regex: "/visualgator.md/" }) {
         frontmatter {
           previous
@@ -59,7 +50,7 @@ const Visualgator = () => {
           <h3 className="sub-title">Email review collector tool</h3>
         </div>
         <div className="right-section shadow">
-          <Img fluid={getImage("Editor")} />
+          <img src={editor} />
         </div>
       </div>
       <div className="content">
@@ -71,7 +62,7 @@ const Visualgator = () => {
         </p>
       </div>
       <div className="image-wrapper shadow">
-        <Img fluid={getImage("Desktop")} />
+        <img src={desktop} />
       </div>
       <div className="content">
         <h2>Code</h2>
@@ -84,7 +75,7 @@ const Visualgator = () => {
         </p>
       </div>
       <div className="image-wrapper mini shadow">
-        <Img fluid={getImage("Mobile")} />
+        <img src={mobile} />
       </div>
       <div className="content">
         <h3>The Front-End</h3>
@@ -104,7 +95,7 @@ const Visualgator = () => {
         </p>
       </div>
       <div className="image-wrapper shadow">
-        <Img fluid={getImage("visualgator-moderation")} />
+        <img src={visualgatorModeration} />
       </div>
     </BlogLayout>
   )

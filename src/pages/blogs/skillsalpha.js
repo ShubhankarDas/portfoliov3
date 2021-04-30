@@ -3,26 +3,14 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import "../../styles/styles.scss"
 
-import Img from "gatsby-image"
 import BlogLayout from "../../components/blogLayout"
+
+// images
+import heroBanner from "../../images/skillsalpha/cover-desktop.png"
 
 const Skillsalpha = () => {
   const data = useStaticQuery(graphql`
     query {
-      images: allFile(
-        filter: { relativePath: { regex: "/skillsalpha/.+\\\\.(jpg|png)/" } }
-      ) {
-        edges {
-          node {
-            name
-            childImageSharp {
-              fluid(maxWidth: 1200) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
       content: markdownRemark(fileAbsolutePath: { regex: "/skillsalpha.md/" }) {
         frontmatter {
           previous
@@ -31,14 +19,6 @@ const Skillsalpha = () => {
       }
     }
   `)
-
-  const getImage = name => {
-    let edge = data.images.edges.filter(edge => {
-      return edge.node.name === name
-    })
-
-    return edge[0].node.childImageSharp.fluid
-  }
 
   const getLink = type => {
     if (data.content.frontmatter[type]) {
@@ -59,7 +39,7 @@ const Skillsalpha = () => {
           <h3 className="sub-title">E-learning enterprise platform</h3>
         </div>
         <div className="right-section shadow">
-          <Img fluid={getImage("cover-desktop")} />
+          <img src={heroBanner} />
         </div>
       </div>
       <div className="content">

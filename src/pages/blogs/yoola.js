@@ -3,26 +3,20 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import "../../styles/styles.scss"
 
-import Img from "gatsby-image"
 import BlogLayout from "../../components/blogLayout"
+
+// images
+import cover from "../../images/yoola/cover.png"
+import yoolaSignupNew from "../../images/yoola/yoola-signup-new.jpg"
+import yoolaSignupNew1 from "../../images/yoola/yoola-signup-new1.png"
+import yoolaHomeNew from "../../images/yoola/yoola-home-new.jpg"
+import yoolaHomeOld from "../../images/yoola/yoola-home-old.png"
+import yoolaBroadcast from "../../images/yoola/yoola-broadcast.jpg"
+import yoolaChatError from "../../images/yoola/yoola-chat-error.jpg"
 
 const Yoola = () => {
   const data = useStaticQuery(graphql`
     query {
-      images: allFile(
-        filter: { relativePath: { regex: "/yoola/.+\\\\.(jpg|png)/" } }
-      ) {
-        edges {
-          node {
-            name
-            childImageSharp {
-              fluid(maxWidth: 1200) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
       content: markdownRemark(fileAbsolutePath: { regex: "/yoola.md/" }) {
         frontmatter {
           previous
@@ -59,7 +53,7 @@ const Yoola = () => {
           <h3 className="sub-title">Android Application</h3>
         </div>
         <div className="right-section shadow">
-          <Img fluid={getImage("cover")} />
+          <img src={cover} />
         </div>
       </div>
       <div className="content">
@@ -92,8 +86,8 @@ const Yoola = () => {
         </p>
       </div>
       <div className="image-wrapper img-shadow multiple">
-        <Img fluid={getImage("yoola-signup-new")} />
-        <Img fluid={getImage("yoola-signup-new")} />
+        <img src={yoolaSignupNew} />
+        <img src={yoolaSignupNew1} />
       </div>
       <div className="content">
         <h3>The Front-End</h3>
@@ -108,8 +102,8 @@ const Yoola = () => {
         </p>
       </div>
       <div className="image-wrapper img-shadow multiple">
-        <Img fluid={getImage("yoola-home-new")} />
-        <Img fluid={getImage("yoola-home-old")} />
+        <img src={yoolaHomeNew} />
+        <img src={yoolaHomeOld} />
       </div>
       <div className="content">
         <h3>The Back-End</h3>
@@ -123,8 +117,8 @@ const Yoola = () => {
         </p>
       </div>
       <div className="image-wrapper img-shadow multiple">
-        <Img fluid={getImage("yoola-broadcast")} />
-        <Img fluid={getImage("yoola-chat-error")} />
+        <img src={yoolaBroadcast} />
+        <img src={yoolaChatError} />
       </div>
     </BlogLayout>
   )

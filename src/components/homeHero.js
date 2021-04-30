@@ -11,8 +11,7 @@ const HomeHero = () => (
           👋🏽
         </span>{" "}
         <br />
-        Hi there! I am Shubhankar, digital product developer, currently based in
-        India.
+        Hi there! I am Shubhankar, digital product developer.
       </h1>
       <h4>
         I strive to bridge the gap between people and technology leaving them a
