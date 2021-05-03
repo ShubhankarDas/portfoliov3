@@ -7,15 +7,20 @@ const HomeHero = () => (
   <div id="home-hero">
     <div className="wrapper">
       <h1>
-        <span role="img" aria-label="hand waving" aria-hidden="false">
+        <span
+          className="animate-wave"
+          role="img"
+          aria-label="hand waving"
+          aria-hidden="false"
+        >
           👋🏽
         </span>{" "}
         <br />
         Hi there! I am Shubhankar, digital product developer.
       </h1>
       <h4>
-        I strive to bridge the gap between people and technology leaving them a
-        good experience. Currently working at{" "}
+        I'm passionate about technology and on a journey to build user centric
+        products. Currently working at{" "}
         <HoverLink
           externalLink="https://browserstack.com"
           text="Browserstack"

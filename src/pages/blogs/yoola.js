@@ -26,14 +26,6 @@ const Yoola = () => {
     }
   `)
 
-  const getImage = name => {
-    let edge = data.images.edges.filter(edge => {
-      return edge.node.name === name
-    })
-
-    return edge[0].node.childImageSharp.fluid
-  }
-
   const getLink = type => {
     if (data.content.frontmatter[type]) {
       return { link: data.content.frontmatter[type], title: type }

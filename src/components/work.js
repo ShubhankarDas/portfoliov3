@@ -78,7 +78,7 @@ const Work = () => {
         <div className="header">
           <h2>Some of my work.</h2>
         </div>
-        <div className="filter-container">
+        {/* <div className="filter-container">
           <div
             className="filter-item"
             onClick={() => setFilter(filterMapping.ALL)}
@@ -113,7 +113,7 @@ const Work = () => {
               reverse={filter !== filterMapping.EXTENSION}
             />
           </div>
-        </div>
+        </div> */}
         <div className="work-item-container">
           {filteredItems.map(item => (
             <WorkItem
