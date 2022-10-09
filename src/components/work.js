@@ -53,7 +53,7 @@ const Work = () => {
             <WorkItem
               title={edge.node.frontmatter.title}
               description={edge.node.frontmatter.description}
-              image={edge.node.frontmatter.bannerImage}
+              image={edge.node.frontmatter.bannerImage.childImageSharp.fluid}
               bannerColor={edge.node.frontmatter.bannerColor}
               key={edge.node.frontmatter.title}
               onClickCallback={() =>
