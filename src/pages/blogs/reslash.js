@@ -43,7 +43,7 @@ const Reslash = () => {
           <h3 className="sub-title">Messaging and calling application</h3>
         </div>
         <div className="right-section shadow">
-          <img src={heroBanner} />
+          <img alt="Reslash" src={heroBanner} />
         </div>
       </div>
       <div className="content">
@@ -55,7 +55,7 @@ const Reslash = () => {
         </p>
       </div>
       <div className="image-wrapper shadow">
-        <img src={whiteThemeRoom} />
+        <img alt="Reslash" src={whiteThemeRoom} />
       </div>
       <div className="content">
         <h3>Process & Architecture</h3>
@@ -68,7 +68,7 @@ const Reslash = () => {
         </p>
       </div>
       <div className="image-wrapper shadow">
-        <img src={architecture} />
+        <img alt="Reslash" src={architecture} />
       </div>
       <div className="content">
         <h3>Code</h3>
@@ -79,7 +79,7 @@ const Reslash = () => {
         </p>
       </div>
       <div className="image-wrapper shadow">
-        <img src={whiteCall} />
+        <img alt="Reslash" src={whiteCall} />
       </div>
       <div className="content">
         <h3>Conclusion</h3>
@@ -93,7 +93,7 @@ const Reslash = () => {
         </p>
       </div>
       <div className="image-wrapper mini shadow">
-        <img src={mobile} />
+        <img alt="Reslash" src={mobile} />
       </div>
     </BlogLayout>
   )

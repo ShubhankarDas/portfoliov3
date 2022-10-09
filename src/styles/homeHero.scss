@@ -1,5 +1,23 @@
 #home-hero {
   width: 100%;
+  position: relative;
+
+  .profile-hero {
+    display: none;
+    position: absolute;
+    height: 400px;
+    top: -10px;
+    right: 0;
+    overflow: hidden;
+
+    img {
+      height: 400px;
+    }
+
+    @media (min-width: 1275px) {
+      display: block;
+    }
+  }
 
   .wrapper {
     width: 100%;

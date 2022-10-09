@@ -2,6 +2,7 @@ import React from "react"
 
 import "../styles/homeHero.scss"
 import HoverLink from "./hoverLink"
+import profileImage from "../images/profile_prev_ui.png"
 
 const HomeHero = () => (
   <div id="home-hero">
@@ -27,6 +28,9 @@ const HomeHero = () => (
         />
         .
       </h4>
+    </div>
+    <div className="profile-hero">
+      <img src={profileImage} />
     </div>
   </div>
 )

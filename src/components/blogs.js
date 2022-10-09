@@ -7,6 +7,13 @@ import HoverLink from "./hoverLink"
 const Blogs = () => {
   const blogs = [
     {
+      title: "Light and dark mode with CSS",
+      description:
+        "Everybody has their personal preferences when it comes to customising their tools.",
+      link:
+        "https://medium.com/@shubh065/light-and-dark-mode-using-css-bf450a166a1a",
+    },
+    {
       title: "How to make your website load faster",
       description: "Ways to improve your website’s SEO",
       link:

@@ -42,7 +42,7 @@ const Visualgator = () => {
           <h3 className="sub-title">Email review collector tool</h3>
         </div>
         <div className="right-section shadow">
-          <img src={editor} />
+          <img alt="Visualgator" src={editor} />
         </div>
       </div>
       <div className="content">
@@ -54,7 +54,7 @@ const Visualgator = () => {
         </p>
       </div>
       <div className="image-wrapper shadow">
-        <img src={desktop} />
+        <img alt="Visualgator" src={desktop} />
       </div>
       <div className="content">
         <h2>Code</h2>
@@ -67,7 +67,7 @@ const Visualgator = () => {
         </p>
       </div>
       <div className="image-wrapper mini shadow">
-        <img src={mobile} />
+        <img alt="Visualgator" src={mobile} />
       </div>
       <div className="content">
         <h3>The Front-End</h3>
@@ -87,7 +87,7 @@ const Visualgator = () => {
         </p>
       </div>
       <div className="image-wrapper shadow">
-        <img src={visualgatorModeration} />
+        <img alt="Visualgator" src={visualgatorModeration} />
       </div>
     </BlogLayout>
   )

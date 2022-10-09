@@ -45,7 +45,7 @@ const Yoola = () => {
           <h3 className="sub-title">Android Application</h3>
         </div>
         <div className="right-section shadow">
-          <img src={cover} />
+          <img alt="Yoola" src={cover} />
         </div>
       </div>
       <div className="content">
@@ -78,8 +78,8 @@ const Yoola = () => {
         </p>
       </div>
       <div className="image-wrapper img-shadow multiple">
-        <img src={yoolaSignupNew} />
-        <img src={yoolaSignupNew1} />
+        <img alt="Yoola" src={yoolaSignupNew} />
+        <img alt="Yoola" src={yoolaSignupNew1} />
       </div>
       <div className="content">
         <h3>The Front-End</h3>
@@ -94,8 +94,8 @@ const Yoola = () => {
         </p>
       </div>
       <div className="image-wrapper img-shadow multiple">
-        <img src={yoolaHomeNew} />
-        <img src={yoolaHomeOld} />
+        <img alt="Yoola" src={yoolaHomeNew} />
+        <img alt="Yoola" src={yoolaHomeOld} />
       </div>
       <div className="content">
         <h3>The Back-End</h3>
@@ -109,8 +109,8 @@ const Yoola = () => {
         </p>
       </div>
       <div className="image-wrapper img-shadow multiple">
-        <img src={yoolaBroadcast} />
-        <img src={yoolaChatError} />
+        <img alt="Yoola" src={yoolaBroadcast} />
+        <img alt="Yoola" src={yoolaChatError} />
       </div>
     </BlogLayout>
   )

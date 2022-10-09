@@ -16,6 +16,12 @@ const Header = () => (
       <HoverLink link="#home-hero" text="about" /> */}
 
       <HoverLink
+        externalLink="https://twitter.com/shubh065"
+        text="Twitter"
+        reverse={true}
+      />
+
+      <HoverLink
         externalLink="https://www.linkedin.com/in/shubhankardas/"
         text="LinkedIn"
         reverse={true}

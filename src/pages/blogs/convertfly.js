@@ -47,7 +47,7 @@ const Convertfly = () => {
           <h3 className="sub-title">Facebook messenger marketing</h3>
         </div>
         <div className="right-section">
-          <img src={heroBanner} />
+          <img alt="Contentful" src={heroBanner} />
         </div>
       </div>
       <div className="content">
@@ -59,7 +59,7 @@ const Convertfly = () => {
         </p>
       </div>
       <div className="image-wrapper">
-        <img src={convertflyTools} />
+        <img alt="Contentful" src={convertflyTools} />
       </div>
       <div className="content">
         <h2>Code</h2>
@@ -87,7 +87,7 @@ const Convertfly = () => {
         </p>
       </div>
       <div className="image-wrapper">
-        <img src={tools2} />
+        <img alt="Contentful" src={tools2} />
       </div>
 
       <div className="content">
@@ -103,7 +103,7 @@ const Convertfly = () => {
         </p>
       </div>
       <div className="image-wrapper">
-        <img src={campaign1} />
+        <img alt="Contentful" src={campaign1} />
       </div>
       <div className="content">
         <h3>Result</h3>
@@ -115,7 +115,7 @@ const Convertfly = () => {
         </p>
       </div>
       <div className="image-wrapper">
-        <img src={campaign2} />
+        <img alt="Contentful" src={campaign2} />
       </div>
     </BlogLayout>
   )

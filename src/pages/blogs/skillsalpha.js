@@ -39,7 +39,7 @@ const Skillsalpha = () => {
           <h3 className="sub-title">E-learning enterprise platform</h3>
         </div>
         <div className="right-section shadow">
-          <img src={heroBanner} />
+          <img alt="Skills Alpha" src={heroBanner} />
         </div>
       </div>
       <div className="content">

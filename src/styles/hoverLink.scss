@@ -28,20 +28,20 @@
 
     &:hover {
       &::after {
-        transform: translateY(-3px);
+        transform: translateY(3px);
       }
     }
   }
 
   &:not(.reverse) {
     &::after {
-      bottom: 3px;
+      bottom: -3px;
       background-color: $background;
     }
 
     &:hover {
       &::after {
-        transform: translateY(3px);
+        transform: translateY(-3px);
       }
     }
   }

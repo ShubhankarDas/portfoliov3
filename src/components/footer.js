@@ -17,6 +17,11 @@ const Footer = () => (
       </h3>
       <div className="social-links-container">
         <HoverLink
+          externalLink="https://twitter.com/shubh065"
+          text="Twitter"
+          reverse={true}
+        />
+        <HoverLink
           externalLink="https://www.linkedin.com/in/shubhankardas/"
           text="LinkedIn"
           reverse={true}

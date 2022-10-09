@@ -3,13 +3,7 @@ import React from "react"
 import "../styles/workItem.scss"
 import Img from "gatsby-image"
 
-const WorkItem = ({
-  title,
-  description,
-  image,
-  bannerColor,
-  onClickCallback,
-}) => (
+const WorkItem = ({ title, description, image, onClickCallback }) => (
   <div
     className="work-item"
     onClick={onClickCallback}
