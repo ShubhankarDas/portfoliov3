@@ -7,6 +7,12 @@ import HoverLink from "./hoverLink"
 const Blogs = () => {
   const blogs = [
     {
+      title: "Why the wall between PM and engineer is crumbling",
+      description: "A short read on the blurring lines between product management and engineering.",
+      link:
+        "https://medium.com/@shubh065/why-the-wall-between-pm-and-engineer-is-crumbling-638dc3424bdc",
+    },
+    {
       title: "Light and dark mode with CSS",
       description:
         "Everybody has their personal preferences when it comes to customising their tools.",
