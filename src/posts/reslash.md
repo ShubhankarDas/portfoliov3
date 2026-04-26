@@ -2,7 +2,7 @@
 title: "Reslash"
 year: "2020"
 description: "Messaging and calling application."
-sequence: 1
+sequence: 2
 bannerImage: ../images/reslash/main.png
 categories: "all web"
 slug: "reslash"
