@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery, navigate } from "gatsby"
+import { getImage } from "gatsby-plugin-image"
 
 import "../styles/work.scss"
 
@@ -8,9 +9,7 @@ import WorkItem from "./workItem"
 const Work = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(
-        sort: { fields: [frontmatter___sequence], order: ASC }
-      ) {
+      allMarkdownRemark(sort: { frontmatter: { sequence: ASC } }) {
         edges {
           node {
             frontmatter {
@@ -22,9 +21,7 @@ const Work = () => {
               categories
               bannerImage {
                 childImageSharp {
-                  fluid(maxWidth: 800) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(width: 800)
                 }
               }
             }
@@ -53,13 +50,13 @@ const Work = () => {
             <WorkItem
               title={edge.node.frontmatter.title}
               description={edge.node.frontmatter.description}
-              image={edge.node.frontmatter.bannerImage.childImageSharp.fluid}
+              image={getImage(edge.node.frontmatter.bannerImage)}
               bannerColor={edge.node.frontmatter.bannerColor}
               key={edge.node.frontmatter.title}
               onClickCallback={() =>
                 routeTo(
-                  edge.node.frontmatter.slug,
-                  edge.node.frontmatter.projectLink
+                   edge.node.frontmatter.slug,
+                   edge.node.frontmatter.projectLink
                 )
               }
             />

@@ -1,7 +1,7 @@
 import React from "react"
 
 import "../styles/workItem.scss"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 const WorkItem = ({ title, description, image, onClickCallback }) => (
   <div
@@ -11,7 +11,7 @@ const WorkItem = ({ title, description, image, onClickCallback }) => (
     role="button"
   >
     <div className="image-container">
-      <Img fluid={image} />
+      <GatsbyImage image={image} alt={title} />
     </div>
     <div className="info-container">
       <h3 className="info-header">{title}</h3>
